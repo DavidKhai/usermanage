@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+      <!-- header -->
+      <header class="container-fluid">
+          <div class="row">
+              <div class="col-12">
+                  <div class="jumbotron text-center">
+                      <h1 class="display-3">User Manage - v2</h1>
+                      <p class="lead">This is the user management section</p>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <!-- end header -->
+
+      <div class="container">
+          <div class="row justify-content-between">
+              <!-- formSearch -->
+              <div class="col-6">
+                    <div class="form-group">
+                        <div class="btn-group btn-block">
+                            <input type="text" class="form-control" name="fSearch" placeholder="Nhập tên người dùng">
+                            <div class="btn btn-secondary"><i class="fa fa-search"></i></div>
+                        </div>
+                    </div>
+              </div>
+               <!-- end formSearch -->
+               <!-- nút add -->
+              <div class="col-3 text-right">
+                  <button class="btn btn-success"><i class="fa fa-plus"></i> Thêm người dùng</button>
+              </div>
+              <!-- end nút add -->
+          </div>
+          <hr/>
+      </div>
+      <!-- TableData -->
+      <div class="container mt-4">
+          <div class="row">
+              <div class="col-9">
+                  <table class="table table-bordered table-striped table-inverse text-center">
+                      <thead class="thead-inverse">
+                          <tr>
+                              <th>STT</th>
+                              <th>Tên</th>
+                              <th>Số điện thoại</th>
+                              <th>Quyền</th>
+                              <th>Trạng thái</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td>Nguyễn Văn A</td>
+                                  <td>0123456789</td>
+                                  <td>Admin</td>
+                                  <td>
+                                      <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> Sửa</button>
+                                      <button class="btn btn-sm btn-danger"> <i class="fa fa-remove"></i> Xóa</button>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>Nguyễn Thị Hồng</td>
+                                  <td>1989898664</td>
+                                  <td>Moderator</td>
+                                  <td>
+                                    <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> Sửa</button>
+                                    <button class="btn btn-sm btn-danger"> <i class="fa fa-remove"></i> Xóa</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td>Huỳnh Yến Nhi</td>
+                                  <td>356972123</td>
+                                  <td>Normal</td>
+                                  <td>
+                                    <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> Sửa</button>
+                                    <button class="btn btn-sm btn-danger"> <i class="fa fa-remove"></i> Xóa</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td>4</td>
+                                  <td>Phan Nhật Long</td>
+                                  <td>879846333</td>
+                                  <td>Moderator</td>
+                                  <td>
+                                    <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> Sửa</button>
+                                    <button class="btn btn-sm btn-danger"> <i class="fa fa-remove"></i> Xóa</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                  <td>5</td>
+                                  <td>Phan Nhật Long</td>
+                                  <td>879846333</td>
+                                  <td>Moderator</td>
+                                  <td>
+                                    <button class="btn btn-sm btn-warning"><i class="fa fa-edit"></i> Sửa</button>
+                                    <button class="btn btn-sm btn-danger"> <i class="fa fa-remove"></i> Xóa</button>
+                                </td>
+                              </tr>
+                          </tbody>
+                  </table>
+              </div>
+                <div class="col-3">
+                    <form>
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h5>Add User</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="fName"  aria-describedby="helpId" placeholder="Nhập tên">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="fPhone"  aria-describedby="helpId" placeholder="Nhập số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" name="fPermission">
+                                    <option value="Admin">Admin</option>
+                                    <option value="Permission">Permission</option>
+                                    <option value="Normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input  class="btn btn-block btn-info" type="reset" value="Thêm mới"/> 
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+              <!-- <div class="col-3">
+                    <form>
+                        <div class="card bg-warning">
+                            <div class="card-header text-center text-white">
+                                <h5>Edit User</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="fName"  aria-describedby="helpId" placeholder="Nhập tên">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="fPhone"  aria-describedby="helpId" placeholder="Nhập số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" name="fPermission">
+                                    <option value="Admin">Admin</option>
+                                    <option value="Permission">Permission</option>
+                                    <option value="Normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input  class="btn btn-block btn-info" type="reset" value="Lưu"/> 
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+              </div> -->
+          </div>
+      </div>
+      <!-- end TableData -->
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
